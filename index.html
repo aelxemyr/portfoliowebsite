@@ -1,109 +1,157 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Bennett A. Myers</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato|Montserrat:300" />
   </head>
 
   <body>
 
-    <header>
-      <img src="images/logo-small-black.png">
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Resum&eacute;</a>
-        <a href="#">Contact</a>
-      </nav>
-    </header>
+    <nav class="navbar fixed-top navbar-expand-sm navbar-dark"
+         style="background: black;">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div id="title">
-      <h1>Bennett A. Myers</h2>
+      <!-- Brand -->
+      <img class="navbar-brand" src="images/logo.svg" height="50px">
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="nav-content">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Resum&eacute;</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid">
+      <h1>Bennett A. Myers</h1>
     </div>
 
     <div id="about">
-      <img src="images/profilephoto.png">
+      <img class="profile-photo" src="images/profilephoto.png">
 
-      <p>I am a meticulous and adaptable multi-paradigm programmer with a foundation in Test Driven Development. I am excited to learn and work in a professional software engineering environment with a company who values growth and collaboration.</p>
+      <p>I am a meticulous and adaptable multi-paradigm programmer with a
+        foundation in Test Driven Development. I am excited to learn and work
+        in a professional software engineering environment with a company who
+        values growth and collaboration.</p>
     </div>
 
     <div id="resume">
       <h2>Resume</h2>
 
-        <div id="resume-skills">
-          <h3>Skills</h3>
-          <p>Languages</p>
-            <button type="button" class="icon">
-              <img src="images/icons/java-original.svg" onerror="" /><br />Java
-            </button>
-            <button type="button" class="icon">
-              <img src="images/icons/scala-original.svg" onerror="" /><br />Scala
-            </button>
-            <button type="button" class="icon">
-              <img src="images/icons/python-original.svg" onerror="" /><br />Python
-            </button>
-            <button type="button" class="icon">
-              <img src="images/icons/javascript-original.svg" onerror="" /><br />JavaScript
-            </button>
-            <button type="button" class="icon">
-              <img src="images/icons/r.svg" onerror="" /><br />R
-            </button>
-            <button type="button" class="icon">
-              <img src="images/icons/html5-original.svg" onerror="" /><br />HTML
-            </button>
-            <button type="button" class="icon">
-              <img src="images/icons/css3-original.svg" onerror="" /><br />CSS
-            </button>
-            <button type="button" class="icon">
-              <img src="images/icons/LaTeX_logo.svg" onerror="" /><br />LaTeX
-            </button>
-            <button type="button" class="icon">
-              <img src="images/icons/commonlisp-original.svg" onerror="" /><br />Common Lisp
-            </button>
-            <button type="button" class="icon">
-              <img src="images/icons/elm-original.svg" onerror="" /><br />Elm
-            </button>
-            <button type="button" class="icon">
-              <img src="images/icons/swi-prolog.svg" onerror="" /><br />Prolog
-            </button>
-          <p>Software Development</p>
-          <ul>
+        <div class="row" id="resume-skills">
+          <div class="col-md-12">
+            <h3>Skills</h3>
+          </div>
+          <div class="col-md-12">
+            <h4>Languages</h4>
+          </div>
+          <div class="col-6 col-md-4 skill-box">
+            <img src="images/icons/java-original.svg" onerror="" />
+            <p>Java</p>
+          </div>
+          <div class="col-6 col-md-4 skill-box">
+            <img src="images/icons/scala-original.svg" onerror="" />
+            <p>Scala</p>
+          </div>
+          <div class="col-6 col-md-4 skill-box">
+            <img src="images/icons/python-original.svg" onerror="" />
+            <p>Python</p>
+          </div>
+          <div class="col-6 col-md-4 skill-box">
+            <img src="images/icons/javascript-original.svg" onerror="" />
+            <p>JavaScript</p>
+          </div>
+          <div class="col-6 col-md-4 skill-box">
+            <img src="images/icons/r.svg" onerror="" />
+            <p>R</p>
+          </div>
+          <div class="col-6 col-md-4 skill-box">
+            <img src="images/icons/html5-original.svg" onerror="" />
+            <p>HTML</p>
+          </div>
+          <div class="col-6 col-md-4 skill-box">
+            <img src="images/icons/css3-original.svg" onerror="" />
+            <p>CSS</p>
+          </div>
+          <div class="col-6 col-md-4 skill-box">
+            <img src="images/icons/LaTeX_logo.svg" onerror="" />
+            <p>LaTeX</p>
+          </div>
+          <div class="col-6 col-md-4 skill-box">
+            <img src="images/icons/clojure.svg" onerror="" />
+            <p>Clojure</p>
+          </div>
+          <div class="col-6 col-md-4 skill-box">
+            <img src="images/icons/elm-original.svg" onerror="" />
+            <p>Elm</p>
+          </div>
+          <div class="col-6 col-md-4 skill-box">
+            <img src="images/icons/swi-prolog.svg" onerror="" />
+            <p>Prolog</p>
+          </div>
+
+          <div class="col-md-12">
+            <h4>Software Development</h4>
+          </div>
+          <ul class="col-6 col-md-4 skill-box">
             <li>Test Driven Development</li>
             <li>Object-Oriented Programming</li>
             <li>Functional Programming</li>
             <li>familiarity with Agile and Scrum</li>
           </ul>
-          <p>IDEs</p>
-          <ul>
-            <button type="button" class="icon">
-              <img src="images/icons/intellij-original.svg" onerror="" /><br />IntelliJ IDEA
-            </button>
-            <button type="button" class="icon">
-              <img src="images/icons/pycharm-original.svg" onerror="" /><br />PyCharm
-            </button>
-            <button type="button" class="icon">
-              <img src="images/icons/webstorm-original.svg" onerror="" /><br />Webstorm
-            </button>
-            <li>R Studio</li>
-            <button type="button" class="icon">
-              <img src="images/icons/atom-original.svg" onerror="" /><br />Atom
-            </button>
-          </ul>
-          <p>Version Control</p>
-          <ul>
-            <button type="button" class="icon">
-              <img src="images/icons/git-original.svg" onerror="" /><br />Git
-            </button>
-            <button type="button" class="icon">
-              <img src="images/icons/github-original.svg" onerror="" /><br />Github
-            </button>
-          </ul>
+
+          <div class="col-md-12">
+            <h4>IDEs</h4>
+          </div>
+          <div class="col-6 col-md-4 skill-box">
+            <img src="images/icons/intellij-original.svg" onerror="" />
+            <p>IntelliJ IDEA</p>
+          </div>
+          <div class="col-6 col-md-4 skill-box">
+            <img src="images/icons/pycharm-original.svg" onerror="" />
+            <p>PyCharm</p>
+          </div>
+          <div class="col-6 col-md-4 skill-box">
+            <img src="images/icons/webstorm-original.svg" onerror="" />
+            <p>Webstorm</p>
+          </div>
+          <div class="col-6 col-md-4 skill-box">
+            <img src="images/icons/rstudio.svg" onerror="" />
+            <p>R Studio</p>
+          </div>
+          <div class="col-6 col-md-4 skill-box">
+            <img src="images/icons/atom-original.svg" onerror="" />
+            <p>Atom</p>
+          </div>
+          <div class="col-md-12">
+            <h4>Version Control</h4>
+          </div>
+          <div class="col-6 col-md-4 skill-box">
+            <img src="images/icons/git-original.svg" onerror="" />
+            <p>Git</p>
+          </div>
+          <div class="col-6 col-md-4 skill-box">
+            <img src="images/icons/github-original.svg" onerror="" />
+            <p>Github</p>
+          </div>
         </div>
 
         <div id="resume-education">
@@ -111,9 +159,12 @@
 					<p>Metropolitan State University of Denver
             - <i>B.S. Mathematics, 2016</i></p>
           <ul>
-            <li>Presented <a href="#">"A Combinatorial Approach to Fibonacci Numbers"</a> at the Pikes Peak Regional Undergraduate Mathematics Conference 2015</li>
+            <li>Presented <a href="#">"A Combinatorial Approach to Fibonacci
+              Numbers"</a> at the Pikes Peak Regional Undergraduate
+              Mathematics Conference 2015</li>
             <li>Attended the Joint Mathematics Meetings in 2015, 2016</li>
-            <li>Participated in the William Lowell Putnam Mathematical Competition in 2013, 2014, 2015</li>
+            <li>Participated in the William Lowell Putnam Mathematical
+              Competition in 2013, 2014, 2015</li>
             <li>President of the Metro Women in Math Club, 2014 - 2015
               <ul>
                 <li>Organized and taught a <a href="#">seminar on LaTeX</a></li>
@@ -139,14 +190,19 @@
 					<h3>Awards</h3>
 					<p>Outstanding Graduate Award </p>
           Metropolitan State University of Denver Mathematical and Computer Sciences Department
-  		 </div>
+        </div>
      </div>
 
      <footer>
        <div id="contact">
          <h2>Contact</h2>
-         <h3>
+
        </div>
      </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
   </body>
 </html>

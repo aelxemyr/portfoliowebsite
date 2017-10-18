@@ -1,4 +1,37 @@
-.icon img {
-  height: 200px;
-  width: 200px;
+nav {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+.jumbotron {
+  margin: 50px 0;
+}
+
+.jumbotron h1 {
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-weight: 300;
+  font-size: 5rem;
+  padding: 7rem 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+.skill-box {
+  background-color: lightgray;
+  border: solid white 10px;
+  border-radius: 10px;
+}
+
+.skill-box img {
+  height: 100px;
+  width: 100px;
 }
