@@ -1,3 +1,7 @@
+html {
+
+}
+
 nav {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
@@ -8,11 +12,10 @@ nav {
 }
 
 .jumbotron h1 {
-  text-align: center;
   font-family: Montserrat, sans-serif;
   font-weight: 300;
-  font-size: 5rem;
-  padding: 7rem 0;
+  font-size: 2.25rem;
+  margin: 7rem 0;
 }
 
 body {
@@ -25,13 +28,34 @@ h1, h2, h3, h4, h5, p {
   font-weight: 300;
 }
 
+.container h3 {
+  font-size: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+.container h4 {
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+
 .skill-box {
   background-color: lightgray;
   border: solid white 10px;
   border-radius: 10px;
+  text-align: center;
+  height: 100%
+}
+
+.image {
+  align-items: center;
+  padding: 10px 10px;
 }
 
 .skill-box img {
-  height: 100px;
-  width: 100px;
+  display: block;
+  margin: auto;
+  max-height: 100px;
 }
