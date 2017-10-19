@@ -13,7 +13,7 @@
         crossorigin="anonymous">
   <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css"
-        href="https://fonts.googleapis.com/css?family=Lato|Montserrat:300"/>
+        href="https://fonts.googleapis.com/css?family=Lato|Montserrat:300,500"/>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
           integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
           crossorigin="anonymous"></script>
@@ -28,10 +28,12 @@
   <script src="javascript/svg-img.js"></script>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="nav">
+
+  <div id="top"></div>
 
   <nav class="navbar fixed-top navbar-expand-sm navbar-dark"
-       style="background: black;">
+       style="background: black;" id="nav" role="navigation">
 
     <img class="navbar-brand" src="images/logo.svg" height="50px">
 
@@ -44,16 +46,25 @@
     <div class="collapse navbar-collapse" id="nav-content">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" href="#top">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+             href="#resume">Resum&eacute;</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Skills</a>
+            <a class="dropdown-item" href="#">Education</a>
+            <a class="dropdown-item" href="#">Experience</a>
+            <a class="dropdown-item" href="#">Awards</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Download PDF</a>
+          </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Resum&eacute;</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="#contact">Contact</a>
         </li>
       </ul>
     </div>
@@ -90,45 +101,45 @@
               <div class="row">
                 <div class="col-6 col-md-4 skill-box">
                   <div class="image">
-                    <img src="images/icons/java-original.svg" onerror="" />
+                    <img src="images/icons/java-mono.svg" onerror="" />
                   </div>
                   <p>Java</p>
                 </div>
                 <div class="col-6 col-md-4 skill-box">
                   <div class="image">
-                    <img src="images/icons/scala-original.svg" onerror=""/>
+                    <img src="images/icons/scala-mono.svg" onerror=""/>
                   </div>
                   <p>Scala</p>
                 </div>
                 <div class="col-6 col-md-4 skill-box">
                   <div class="image">
-                    <img src="images/icons/python-original.svg" onerror=""/>
+                    <img src="images/icons/python-mono.svg" onerror=""/>
                   </div>
                   <p>Python</p>
                 </div>
                 <div class="col-6 col-md-4 skill-box">
                   <div class="image">
-                    <img src="images/icons/javascript-original.svg" onerror=""/>
+                    <img src="images/icons/javascript-mono.svg" onerror=""/>
                   </div>
                   <p>JavaScript</p>
                 </div>
                 <div class="col-6 col-md-4 skill-box">
                   <div class="image">
-                    <img src="images/icons/r.svg" onerror=""/>
-                  </div>
-                  <p>R</p>
-                </div>
-                <div class="col-6 col-md-4 skill-box">
-                  <div class="image">
-                    <img src="images/icons/html5-original.svg" onerror=""/>
+                    <img src="images/icons/html5-mono.svg" onerror=""/>
                   </div>
                   <p>HTML</p>
                 </div>
                 <div class="col-6 col-md-4 skill-box">
                   <div class="image">
-                    <img src="images/icons/css3-original.svg" onerror=""/>
+                    <img src="images/icons/css3-mono.svg" onerror=""/>
                   </div>
                   <p>CSS</p>
+                </div>
+                <div class="col-6 col-md-4 skill-box">
+                  <div class="image">
+                    <img src="images/icons/r-mono.svg" onerror=""/>
+                  </div>
+                  <p>R</p>
                 </div>
                 <div class="col-6 col-md-4 skill-box">
                   <div class="image">
@@ -138,19 +149,19 @@
                 </div>
                 <div class="col-6 col-md-4 skill-box">
                   <div class="image">
-                    <img src="images/icons/clojure.svg" onerror=""/>
+                    <img src="images/icons/clojure-mono.svg" onerror=""/>
                   </div>
                   <p>Clojure</p>
                 </div>
                 <div class="col-6 col-md-4 skill-box">
                   <div class="image">
-                    <img src="images/icons/elm-original.svg" onerror=""/>
+                    <img src="images/icons/elm-mono.svg" onerror=""/>
                   </div>
                   <p>Elm</p>
                 </div>
                 <div class="col-6 col-md-4 skill-box">
                   <div class="image">
-                    <img src="images/icons/swi-prolog.svg" onerror=""/>
+                    <img src="images/icons/swi-prolog-mono.svg" onerror=""/>
                   </div>
                   <p>Prolog</p>
                 </div>
@@ -174,6 +185,19 @@
                   </div>
                   <p>Test Driven Development</p>
                 </div>
+                <div class="col-6 col-md-4 skill-box">
+                  <div class="image">
+                    <img src="images/icons/oop-mono.svg" onerror=""/>
+                  </div>
+                  <p>Object-Oriented Programming</p>
+                </div>
+                <div class="col-6 col-md-4 skill-box">
+                  <div class="image">
+                    <img src="images/icons/lambda-mono.svg" onerror=""/>
+                  </div>
+                  <p>Functional Programming</p>
+                </div>
+
                 <ul class="col-6 col-md-4 skill-box">
                   <li>Test Driven Development</li>
                   <li>Object-Oriented Programming</li>
