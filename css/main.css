@@ -1,6 +1,4 @@
-html {
 
-}
 
 nav {
   font-family: 'Montserrat', sans-serif;
@@ -38,8 +36,35 @@ h1, h2, h3, h4, h5, p {
   font-size: 1.2rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
-  text-align: center;
 }
+
+.panel-group {
+  margin: 1rem 1rem;
+}
+
+.panel-group.row {
+  margin: 0 1rem;
+}
+
+.panel-heading {
+  cursor: pointer;
+  border-top: solid 1px lightgray;
+  margin: 2px 0;
+  padding-bottom: 0.2rem;
+  padding-top: 0.4rem;
+  padding-left: 0.2rem;
+}
+
+.panel-title:after {
+  font-family: 'FontAwesome';
+  content: "\f077";
+  float: right;
+  color: grey;
+}
+.panel-title.collapsed:after {
+  content: "\f078";
+}
+
 
 .skill-box {
   background-color: lightgray;
@@ -47,6 +72,9 @@ h1, h2, h3, h4, h5, p {
   border-radius: 10px;
   text-align: center;
   height: 100%
+}
+.skill-box:hover {
+  background-color: gray;
 }
 
 .image {
