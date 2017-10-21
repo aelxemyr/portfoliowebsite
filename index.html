@@ -50,12 +50,12 @@
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" data-toggle="dropdown"
-             href="#resume">Resum&eacute;</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Skills</a>
-            <a class="dropdown-item" href="#">Education</a>
-            <a class="dropdown-item" href="#">Experience</a>
-            <a class="dropdown-item" href="#">Awards</a>
+             id="resume-dropdown" href="#">Resum&eacute;</a>
+          <div class="dropdown-menu" aria-labelledby="resume-dropdown">
+            <a class="dropdown-item" href="#resume">Skills</a>
+            <a class="dropdown-item" href="#education">Education</a>
+            <a class="dropdown-item" href="#experience">Experience</a>
+            <a class="dropdown-item" href="#awards">Awards</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Download PDF</a>
           </div>
@@ -80,15 +80,28 @@
     </div>
   </div>
 
-  <div class="container">
-    <div class="row" id="resume">
+  <!-- Intro -->
+  <div class="container" id="intro">
+    <div class="row">
+      <div class="col-md-6">
+        <p>I am a meticulous and adaptable multi-paradigm programmer with a
+          foundation in Test Driven Development. I am excited to learn and work
+          in a professional software engineering environment with a company who
+          values growth and collaboration.</p>
+      </div>
+    </div>
+  </div>
 
+  <!-- Resume -->
+  <div class="container" id="resume">
+
+    <!-- Skills -->
+    <div class="row section" id="skills">
       <div class="col-md-12">
-        <!-- Skills -->
         <h3>Skills</h3>
       </div>
       <div class="col-md-12">
-        <div class="panel-group" id="skills">
+        <div class="panel-group">
 
           <!-- Languages -->
           <div class="panel panel-default">
@@ -279,76 +292,125 @@
     </div>
 
     <!-- Education -->
-    <div id="resume-education">
-      <h3>Education</h3>
-      <p>Metropolitan State University of Denver
-        - <i>B.S. Mathematics, 2016</i></p>
-      <ul>
-        <li>Presented <a href="#">"A Combinatorial Approach to Fibonacci
-          Numbers"</a> at the Pikes Peak Regional Undergraduate
-          Mathematics Conference 2015
-        </li>
-        <li>Attended the Joint Mathematics Meetings in 2015, 2016</li>
-        <li>Participated in the William Lowell Putnam Mathematical
-          Competition in 2013, 2014, 2015
-        </li>
-        <li>President of the Metro Women in Math Club, 2014 - 2015
-          <ul>
-            <li>Organized and taught a <a href="#">seminar on LaTeX</a></li>
-            <li>Organized exam week tutoring events</li>
-            <li>Assisted in community outreach for math</li>
-          </ul>
-        </li>
-        <li>Vice President of the Society of Physics Students, 2012- 2013</li>
-      </ul>
+    <div class="row section" id="education">
+      <div class="col-md-12">
+        <h3>Education</h3>
+      </div>
+      <div class="col-md-12">
+        <div class="panel-group">
+
+          <!-- MSU Denver -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title collapsed" data-toggle="collapse"
+                  data-target="#msudenver">Metropolitan State University of
+                Denver</h4>
+            </div>
+            <div id="msudenver"
+                 class="panel-collapse collapse container-fluid">
+              <p>Bachelor of Science Theoretical Mathematics, 2016</p>
+              <ul>
+                <li>Presented <a href="#">"A Combinatorial Approach to Fibonacci
+                  Numbers"</a> at the Pikes Peak Regional Undergraduate
+                  Mathematics Conference 2015
+                </li>
+                <li>Attended the Joint Mathematics Meetings in 2015, 2016</li>
+                <li>Participated in the William Lowell Putnam Mathematical
+                  Competition in 2013, 2014, 2015
+                </li>
+                <li>President of the Metro Women in Math Club, 2014 - 2015
+                  <ul>
+                    <li>Organized and taught a <a href="#">seminar on LaTeX</a></li>
+                    <li>Organized exam week tutoring events</li>
+                    <li>Assisted in community outreach for math</li>
+                  </ul>
+                </li>
+                <li>Vice President of the Society of Physics Students, 2012- 2013</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Experience -->
-    <div id="resume-experience">
-      <h3>Experience</h3>
-      <p>Metropolitan State University of Denver Math Lab - <i>Math Tutor</i></p>
-      <small>AUGUST 2013 - MAY 2015</small>
-      <ul>
-        <li>Tutored students in algebra, geometry, calculus,
-          probability/statistics, and mathematical proofs
-        </li>
-      </ul>
+    <div class="row section" id="experience">
+      <div class="col-md-12">
+        <h3>Experience</h3>
+      </div>
+      <div class="col-md-12">
+        <div class="panel-group">
+
+          <!-- Tutor -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title collapsed" data-toggle="collapse"
+                  data-target="#tutor">University Math Tutor</h4>
+            </div>
+            <div id="tutor"
+                 class="panel-collapse collapse container-fluid">
+              <p>Metropolitan State University of Denver Math Lab - <i>Math Tutor</i></p>
+              <small>AUGUST 2013 - MAY 2015</small>
+              <ul>
+                <li>Tutored students in algebra, geometry, calculus,
+                  probability/statistics, and mathematical proofs
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Awards -->
-    <div id="resume-awards">
-      <h3>Awards</h3>
-      <p>Outstanding Graduate Award </p>
-      Metropolitan State University of Denver Mathematical and Computer Sciences
-      Department
+    <div class="row section" id="awards">
+      <div class="col-md-12">
+        <h3>Awards</h3>
+      </div>
+      <div class="col-md-12">
+        <div class="panel-group">
+
+          <!-- Outstanding Graduate Award -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title collapsed" data-toggle="collapse"
+                  data-target="#award">Outstanding Graduate Award</h4>
+            </div>
+            <div id="award"
+                 class="panel-collapse collapse container-fluid">
+              Metropolitan State University of Denver Mathematical and Computer Sciences
+              Department Outstanding Graduate Award, 2017
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-  </div>
-  </div>
   </div>
 
   <!-- About Me -->
   <div class="container" id="about">
     <div class="row">
       <div class="col-md-12">
-        <h3>About Me</h3>
+        <h2>About Me</h2>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 profile" align="center">
         <img class="profile-photo" src="images/profilephoto.png">
       </div>
-      <div class="col-md-8">
+      <div class="col-md-6 profile">
         <p>I am a meticulous and adaptable multi-paradigm programmer with a
           foundation in Test Driven Development. I am excited to learn and work
           in a professional software engineering environment with a company who
           values growth and collaboration.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac est ut ligula egestas auctor. Nullam pharetra iaculis sem hendrerit imperdiet. Maecenas ut ante at est cursus efficitur volutpat a ex. Nunc est lacus, blandit id lorem at, laoreet viverra sem. Nulla vel justo et libero blandit lacinia. Duis id purus ullamcorper, finibus enim vel, porta enim. Aliquam mauris tortor, viverra eu nunc nec, sodales rhoncus sem. Fusce placerat erat et sem pharetra, eget accumsan massa dictum. Mauris nec interdum mi, ut vestibulum sem. In velit lorem, lobortis in accumsan ut, auctor ut purus. Donec eu finibus justo. Aliquam iaculis suscipit aliquet.</p>
+        <p>Integer sit amet egestas magna. Phasellus arcu tortor, imperdiet sed nibh ut, maximus feugiat urna. Aliquam sit amet felis eget mi venenatis ultricies. Vivamus cursus porta elit eu venenatis. Pellentesque luctus nunc purus, sed mollis ipsum vestibulum non. Aenean ultricies odio quis tellus molestie, sit amet fermentum mauris rhoncus. Sed vestibulum tristique nulla at aliquet. Pellentesque et neque neque. Maecenas cursus elementum interdum. Sed posuere maximus mi vel consequat. Mauris at libero at dolor aliquam tristique et id risus. Aliquam nec eleifend massa. Nam iaculis blandit congue. Vivamus pharetra pretium massa id ultricies. Pellentesque ac felis fermentum, vulputate elit in, placerat felis. Fusce elementum sit amet lorem vel hendrerit.</p>
       </div>
     </div>
   </div>
 
-  <footer>
-    <div id="contact">
+  <footer class="container" id="contact">
+    <div class="row">
       <h2>Contact</h2>
-
     </div>
   </footer>
 
