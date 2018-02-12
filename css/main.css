@@ -40,7 +40,7 @@ nav {
   margin: 7rem 0;
 }
 
-h1, h2, h3, h4, h5, p {
+h1, h2, h3, h4, h5, p, li, small, label {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
 }
@@ -100,13 +100,8 @@ h1, h2, h3, h4, h5, p {
   height: 100%;
 }
 .skill-box:hover {
-  background-color: #555555;
-  color: white;
   border-radius: 20px;
   font-weight: 500;
-}
-
-.skill-box:active {
   transform: translateY(4px);
 }
 
@@ -115,12 +110,42 @@ h1, h2, h3, h4, h5, p {
   padding: 10px 10px;
 }
 
+.portfolio {
+  margin: 1rem;
+  display: block;
+  align-content: center;
+}
+
+.screenshot {
+  max-width: 100%;
+  padding: 1rem;
+}
+
 .skill-box img {
   display: block;
   margin: auto;
   max-height: 100px;
 }
 
+.ss {
+  padding: 0 !important;
+}
+
 .profile {
   margin: 1rem;
+}
+
+.contact-box {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.fa {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.social-media a {
+  text-align: center;
+  color: black;
 }

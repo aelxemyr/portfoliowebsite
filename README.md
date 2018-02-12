@@ -1,1 +1,1 @@
-Personal Website - bennettalexmyers.com
+freeCodeCamp Project 2: Portfolio Website
